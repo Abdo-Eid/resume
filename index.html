@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelhamed Eid - ML Engineer & Data Scientist</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --background-color: #f8fafc;
+            --text-color: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-grow: 1;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        .name-title {
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 3rem 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Projects */
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .project-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .project-demo {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .technologies {
+            margin: 1rem 0;
+            font-style: italic;
+            color: var(--primary-color);
+        }
+
+        /* Certificates */
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .certificate-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .certificate-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .certificate-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content, .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-info {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+
+            .certificates-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="profile-section">
+                <img src="assets/profile.jpg" alt="Abdelhamed Eid" class="profile-image">
+                <div class="name-title">
+                    <h1>Abdelhamed Eid</h1>
+                    <p class="subtitle">Machine Learning Engineer & Data Scientist</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:abdogenius2003@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/Abdo-Eid" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/abdulhamed-eid" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Artificial Intelligence in Machine Learning</h3>
+                <p>Faculty of Artificial Intelligence, University of Menoufia</p>
+                <p>2022 - Present | GPA: 3.55</p>
+                <p>Relevant Coursework: Machine Learning, Data Science, Data Analysis, Database Management Systems, Software Engineering, PMP, Image and Signal Processing Techniques</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Attendance Management System</h3>
+                <div class="project-content">
+                    <div class="project-info">
+                        <p class="technologies">Technologies: Flask, SQL Alchemy, SQLite</p>
+                        <p>Developed a web-based program for college attendance management. Utilized Flask for the web framework and SQL Alchemy integrated with SQLite for database management. The system allows attendance to be taken over the local network and includes a feature to export attendance data into Excel sheets for further analysis.</p>
+                        <!-- <a href="#" class="btn-demo" target="_blank">View Project Demo</a> -->
+                    </div>
+                    <!-- <img src="assets/attendance-demo.jpg" alt="Attendance System Demo" class="project-demo"> make .gif into the git and here -->
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Data Processing and Machine Learning GUI</h3>
+                <div class="project-content">
+                    <div class="project-info">
+                        <p class="technologies">Technologies: Tkinter, Pandas, Scikit-learn, NumPy, GitHub</p>
+                        <p>Created a GUI for data processing and machine learning using Tkinter in Python. Implemented an OOP structure to streamline operations with Pandas, Scikit-learn, and NumPy. Developed and integrated the GUI with data libraries, enabling complex data analyses and model training. Collaborated with teammates using GitHub for version control and code management.</p>
+                        <a href="https://github.com/Abdo-Eid/2ndYearMLproject" class="btn-demo" target="_blank">View Project Demo</a>
+                    </div>
+                    <!-- <img src="assets/ml-gui-demo.jpg" alt="ML GUI Demo" class="project-demo"> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <h3>Front End Development Track</h3>
+                    <img src="assets/frontend-cert.jpg" alt="Front End Development Certificate" class="certificate-image">
+                    <p>OMAC Udacity | September 2020</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Full Stack Development Track</h3>
+                    <img src="assets/fullstack-cert.jpg" alt="Full Stack Development Certificate" class="certificate-image">
+                    <p>OMAC Udacity | September 2020</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data Science</h3>
+                    <ul class="skill-list">
+                        <li>Data Analysis</li>
+                        <li>Data Visualization</li>
+                        <li>Database Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>AI/ML</h3>
+                    <ul class="skill-list">
+                        <li>Machine Learning</li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul class="skill-list">
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>Scikit-learn</li>
+                        <li>NumPy</li>
+                        <li>SQLite</li>
+                        <li>SQL Alchemy</li>
+                        <li>Flask</li>
+                        <li>Tkinter</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Data Analysis and Freelancing Training</h3>
+                <p>NTI (120hr)</p>
+                <p>Worked and learned about analyzing data, pulling insights, Power BI, and Excel.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Operations Team Member</h3>
+                <p>AI Entrepreneurship Club</p>
+                <p>Jan 2024 – Oct 2024</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
